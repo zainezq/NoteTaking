@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ContextMenu?>
+
+<?import javafx.scene.image.ImageView?>
+<?import com.sun.javafx.scene.control.EmbeddedTextContextMenuContent?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.web.HTMLEditor?>
+<!-- dividerPositions="0.2" -->
+<SplitPane fx:id="yourSplitPane" dividerPositions="0.2"  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <BorderPane layoutX="22.0" layoutY="174.0" prefHeight="798.0" prefWidth="294.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <MenuBar BorderPane.alignment="CENTER">
+                            <menus>
+                                <Menu mnemonicParsing="false" text="File">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleLoad" text="Load" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Export">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleExportSelected" text="Export Selected" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleExportAll" text="Export All" />
+                                    </items>
+                                </Menu>
+                                <Menu mnemonicParsing="false" text="Help">
+                                    <items>
+                                        <MenuItem mnemonicParsing="false" onAction="#handleTutorial" text="Tutorial" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="About" />
+                                    </items>
+                                </Menu>
+                            </menus>
+                        </MenuBar>
+                    </top>
+                    <center>
+                        <ListView fx:id="previewList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+                    </center>
+                    <bottom>
+                        <ButtonBar fx:id="deleteBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <buttons>
+                                <Button mnemonicParsing="false" onAction="#handleDelete" text="Delete Selected Note" />
+                            </buttons>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </ButtonBar>
+                    </bottom>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+
+        <AnchorPane fx:id="rightPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+            <children>
+                <BorderPane prefHeight="698.0" prefWidth="698.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <center>
+                        <HTMLEditor fx:id="editor" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="200.0" prefWidth="698.0" BorderPane.alignment="CENTER" />
+
+                    </center>
+                    <bottom>
+                        <ButtonBar fx:id="addBar" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <buttons>
+                                <Button text="Rename" onAction="#handleRenameNote" />
+
+                                <Button mnemonicParsing="false" onAction="#handleAddToNote" text="Add As New Note" />
+                            </buttons>
+                            <padding>
+                                <Insets right="20.0" />
+                            </padding>
+                        </ButtonBar>
+                    </bottom>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </items>
+</SplitPane>
