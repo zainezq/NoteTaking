@@ -27,6 +27,7 @@
                                         <MenuItem mnemonicParsing="false" onAction="#handleNew" text="New" />
                                         <MenuItem mnemonicParsing="false" onAction="#handleLoad" text="Load" />
                                         <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+                                        <MenuItem mnemonicParsing="false" onAction="#handleSetting" text="Settings"/>
 
                                     </items>
                                 </Menu>

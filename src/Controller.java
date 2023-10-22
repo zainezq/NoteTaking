@@ -4,7 +4,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.Menu;
 import javafx.scene.control.TextField;
@@ -12,6 +15,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.web.HTMLEditor;
 import javafx.stage.FileChooser;
 import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
@@ -480,7 +484,25 @@ public class Controller {
     }
 
 
-}
+    public void handleSetting() {
+        try {
+            // Load the Settings.fxml file
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("controller-view.fxml"));
+            Parent root = loader.load();
+
+            // Create a new stage (window) for the settings
+            Stage settingsStage = new Stage();
+            settingsStage.initModality(Modality.APPLICATION_MODAL); // Makes it a modal window
+            settingsStage.setTitle("Settings");
+            settingsStage.setScene(new Scene(root));
+
+            // Show the settings window
+            settingsStage.showAndWait(); // Use showAndWait if you want it to be a modal window
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    }
 
 
 
