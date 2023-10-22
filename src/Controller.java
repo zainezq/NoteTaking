@@ -47,6 +47,7 @@ public class Controller {
     private ObservableMap<String, String> notes = FXCollections.observableHashMap();
     private String currentNoteTitle = null; // Track the currently selected note
 
+    private File loadedFile;
 
     public void initialize() {
 
@@ -203,6 +204,8 @@ public class Controller {
 
         if (selectedFile != null) {
             // Read the content of the selected file and set it in the editor
+            loadedFile = selectedFile;
+
             System.out.println("Reading and loading file...");
 
             try {
@@ -210,17 +213,15 @@ public class Controller {
                 String fileContent = readFile(selectedFile);
 
                 if (!fileContent.isEmpty()) {
+                    String toHtml = readFile(selectedFile);
+                    String HTMLText = convertTextToHtml(toHtml);
+
                     // Split the content into the first line (title) and the rest (content)
                     String[] lines = fileContent.split("\n");
 
                     // Extract the first line as the title
                     String title = lines[0];
 
-                    // Extract the remaining lines as content, joining them with line breaks
-                    String content = String.join("\n", Arrays.copyOfRange(lines, 1, lines.length));
-
-                    // Add the new note with the title and content to the map
-                    notes.put(title, content);
 
                     // Add the title to the previewList
                     previewList.getItems().add(title);
@@ -230,7 +231,7 @@ public class Controller {
 
                     // Enable the editor and load the content
                     editor.setDisable(false);
-                    editor.setHtmlText(content);
+                    editor.setHtmlText(HTMLText);
                 }
 
             } catch (IOException e) {
@@ -472,10 +473,11 @@ public class Controller {
 
             ButtonType saveAsZipButton = new ButtonType("Save as Zip");
             ButtonType saveAsTxtButton = new ButtonType("Save as Txt");
+            ButtonType saveToFileButton = new ButtonType("Save to File"); // New option
             ButtonType exitWithoutSavingButton = new ButtonType("Exit without saving");
             ButtonType cancelButton = new ButtonType("Cancel", ButtonBar.ButtonData.CANCEL_CLOSE);
 
-            alert.getButtonTypes().setAll(saveAsZipButton, saveAsTxtButton, exitWithoutSavingButton, cancelButton);
+            alert.getButtonTypes().setAll(saveAsZipButton, saveAsTxtButton, saveToFileButton, exitWithoutSavingButton, cancelButton);
 
             Optional<ButtonType> result = alert.showAndWait();
             if (result.isPresent()) {
@@ -488,6 +490,12 @@ public class Controller {
                     // Save notes as a single txt file
                     // Implement txt saving logic here
                     saveNotesAsTxt();
+                    Platform.exit();
+                } else if (result.get().equals(saveToFileButton)) {
+                    // Save the current note to the file it was loaded from
+                    if (currentNoteTitle != null) {
+                        saveNoteToFile(currentNoteTitle);
+                    }
                     Platform.exit();
                 } else if (result.get() == exitWithoutSavingButton) {
                     // Exit without saving
@@ -503,6 +511,20 @@ public class Controller {
         }
 
 
+    }
+
+    private void saveNoteToFile(String noteTitle) {
+        if (notes.containsKey(noteTitle) && loadedFile != null) {
+            String content = notes.get(noteTitle);
+
+            try (PrintWriter writer = new PrintWriter(loadedFile)) {
+                writer.print(content);
+                System.out.println("File saved successfully: " + loadedFile.getAbsolutePath());
+            } catch (IOException e) {
+                showAlert("Error", "Error saving note to file: " + e.getMessage(), AlertType.ERROR);
+                e.printStackTrace();
+            }
+        }
     }
 
 
