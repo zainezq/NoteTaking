@@ -489,12 +489,15 @@ public class Controller {
             // Load the Settings.fxml file
             FXMLLoader loader = new FXMLLoader(getClass().getResource("controller-view.fxml"));
             Parent root = loader.load();
-
             // Create a new stage (window) for the settings
             Stage settingsStage = new Stage();
             settingsStage.initModality(Modality.APPLICATION_MODAL); // Makes it a modal window
             settingsStage.setTitle("Settings");
             settingsStage.setScene(new Scene(root));
+            settingsStage.setMinWidth(800);
+            settingsStage.setMinHeight(600);
+            settingsStage.setWidth(1000);
+            settingsStage.setHeight(800);
 
             // Show the settings window
             settingsStage.showAndWait(); // Use showAndWait if you want it to be a modal window
