@@ -4,7 +4,10 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.geometry.Insets;
 import javafx.scene.control.*;
+import javafx.scene.control.Menu;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.web.HTMLEditor;
 import javafx.stage.FileChooser;
@@ -12,7 +15,10 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
 
+import java.awt.*;
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
@@ -76,7 +82,7 @@ public class Controller {
         });
 
         editor.setDisable(true);
-        editor.setHtmlText("Please click 'Add As New Note' to get started...");
+        editor.setHtmlText("Please click 'New Note' to get started...");
     }
 
 
@@ -368,10 +374,21 @@ public class Controller {
         }
     }
 
-    public void handleTutorial(ActionEvent actionEvent) {
+    public void handleTutorial() {
+        String url = "https://github.com/zainezq/NoteTaking/tree/main";
+
+        try {
+            Desktop.getDesktop().browse(new URI(url));
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void handleAbout(ActionEvent actionEvent) {
+    public void handleAbout() {
+
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.showAndWait();
+
     }
 
     private void saveNotesAsZip() {

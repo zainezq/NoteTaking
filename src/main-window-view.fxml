@@ -74,7 +74,7 @@
                             <buttons>
                                 <Button text="Rename" onAction="#handleRenameNote" />
 
-                                <Button mnemonicParsing="false" onAction="#handleAddToNote" text="Add As New Note" />
+                                <Button mnemonicParsing="false" onAction="#handleAddToNote" text="New note" />
                             </buttons>
                             <padding>
                                 <Insets right="20.0" />
