@@ -23,6 +23,7 @@ import java.awt.*;
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
@@ -145,7 +146,7 @@ public class Controller {
     @FXML
     private void handleNew() {
         // Check if there's unsaved content in the editor
-        if (isContentUnsaved()) {
+        if (!isContentUnsaved()) {
             // If there's unsaved content, ask the user for confirmation
             Alert alert = new Alert(AlertType.CONFIRMATION);
             alert.setTitle("Unsaved Changes");
@@ -181,7 +182,6 @@ public class Controller {
     private boolean isContentUnsaved() {
         // Check if the editor contains any content
         String currentContent = editor.getHtmlText();
-        System.out.println(!currentContent.isEmpty());
         return !currentContent.isEmpty();
     }
 
@@ -200,7 +200,6 @@ public class Controller {
         FileChooser fileChooser = new FileChooser();
         fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Text Files", "*.txt"));
         File selectedFile = fileChooser.showOpenDialog(editor.getScene().getWindow());
-        System.out.println("Selected File: " + selectedFile);
 
         if (selectedFile != null) {
             // Read the content of the selected file and set it in the editor
@@ -209,9 +208,30 @@ public class Controller {
             try {
                 // Implement a method to read file content
                 String fileContent = readFile(selectedFile);
-                String htmlContent = convertTextToHtml(fileContent);
 
-                editor.setHtmlText(htmlContent);
+                if (!fileContent.isEmpty()) {
+                    // Split the content into the first line (title) and the rest (content)
+                    String[] lines = fileContent.split("\n");
+
+                    // Extract the first line as the title
+                    String title = lines[0];
+
+                    // Extract the remaining lines as content, joining them with line breaks
+                    String content = String.join("\n", Arrays.copyOfRange(lines, 1, lines.length));
+
+                    // Add the new note with the title and content to the map
+                    notes.put(title, content);
+
+                    // Add the title to the previewList
+                    previewList.getItems().add(title);
+
+                    // Select the newly added note in the list
+                    previewList.getSelectionModel().select(title);
+
+                    // Enable the editor and load the content
+                    editor.setDisable(false);
+                    editor.setHtmlText(content);
+                }
 
             } catch (IOException e) {
                 showAlert("Error", "Error reading the file", AlertType.ERROR);
@@ -334,7 +354,10 @@ public class Controller {
 
         if (selectedItems.isEmpty()) {
             // No items selected, show an alert
-            showAlert("No notes selected", "Select one or more notes to export.", AlertType.INFORMATION);
+            Alert alert = new Alert(AlertType.INFORMATION);
+            alert.setTitle("No notes selected");
+            alert.setHeaderText("You haven't selected any notes to export");
+            alert.showAndWait();
         } else {
             // Create a file chooser for saving the zip file
             FileChooser fileChooser = new FileChooser();
@@ -373,7 +396,6 @@ public class Controller {
             Alert alert = new Alert(AlertType.INFORMATION);
             alert.setTitle("No notes selected");
             alert.setHeaderText("You haven't selected any notes to export");
-
             alert.showAndWait();
         }
     }
