@@ -38,6 +38,7 @@ public class Controller {
     public Menu file;
     public TextField noteTitleTextField;
     public SplitPane yourSplitPane;
+    public ButtonBar deleteBar;
     @FXML
     private ListView<String> previewList;
 

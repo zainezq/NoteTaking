@@ -10,7 +10,7 @@ public class NoteTakingMain extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(NoteTakingMain.class.getResource("main-window-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1200, 800);
-        scene.getStylesheets().add("styling.css");
+        //scene.getStylesheets().add("menu-button.css");
         stage.getIcons().add(new Image("Resources/icon.png"));
         stage.setTitle("Notes");
         stage.setScene(scene);

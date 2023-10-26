@@ -6,8 +6,11 @@ import java.util.List;
 
 public class settingsController {
 
+
+
     public void initialize(){
         // Get the SplitPane and set it to non-resizable
+
 
 
 
@@ -23,5 +26,14 @@ public class settingsController {
     }
 
     public void changePassword(ActionEvent actionEvent) {
+    }
+
+    public void showAdvancedSettings(ActionEvent actionEvent) {
+    }
+
+    public void player_setting(ActionEvent actionEvent) {
+    }
+
+    public void back(ActionEvent actionEvent) {
     }
 }

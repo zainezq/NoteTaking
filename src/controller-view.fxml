@@ -1,44 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.control.SplitPane?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.CheckBox?>
-<?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="settingsController">
-    <!-- Place the SplitPane within the center of the BorderPane -->
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+<?import javafx.scene.Group?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="settingsController">
     <center>
-        <SplitPane dividerPositions="0.2">
-            <!-- Left side with navigation -->
-            <VBox style="-fx-background-color: #f0f0f0;">
-                <!-- Add buttons or items for different settings categories -->
-                <Button onAction="#showGeneralSettings" text="General" />
-                <Button onAction="#showAppearanceSettings" text="Appearance" />
-                <Button onAction="#showSecuritySettings" text="Security" />
-                <!-- Add more navigation items as needed -->
-            </VBox>
-
-            <!-- Right side with details/options -->
-            <VBox style="-fx-background-color: #ffffff;">
-                <!-- Content for general settings -->
-                <Label text="General Settings" />
-                <CheckBox text="Enable Feature 1" />
-                <CheckBox text="Enable Feature 2" />
-
-                <!-- Content for appearance settings -->
-                <Label text="Appearance Settings" />
-                <RadioButton text="Light Theme" />
-                <RadioButton text="Dark Theme" />
-
-                <!-- Content for security settings -->
-                <Label text="Security Settings" />
-                <PasswordField promptText="Enter Password" />
-                <Button text="Change Password" onAction="#changePassword" />
-            </VBox>
-        </SplitPane>
+        <StackPane>
+            <children>
+                <GridPane alignment="CENTER" hgap="20" vgap="20">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="100.0" prefWidth="300.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Settings" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.columnSpan="2">
+                            <font>
+                                <Font size="20.0" />
+                            </font>
+                        </Label>
+                        <VBox GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.rowSpan="14" spacing="20">
+                            <padding>
+                                <Insets left="20" right="20" top="20" bottom="20" />
+                            </padding>
+                            <Label text="General Settings">
+                                <font>
+                                    <Font size="16.0" />
+                                </font>
+                            </Label>
+                            <CheckBox text="Enable Auto-Save" />
+                            <CheckBox text="Show Line Numbers" />
+                        </VBox>
+                        <VBox GridPane.columnIndex="1" GridPane.rowIndex="1" spacing="20">
+                            <padding>
+                                <Insets left="20" right="20" top="20" bottom="20" />
+                            </padding>
+                            <Group>
+                                <Label text="Appearance">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                            </Group>
+                            <RadioButton mnemonicParsing="false" text="Light Theme" />
+                            <RadioButton mnemonicParsing="false" text="Dark Theme" />
+                            <Separator orientation="HORIZONTAL">
+                                <HBox.margin>
+                                    <Insets top="10.0" />
+                                </HBox.margin>
+                            </Separator>
+                            <Group>
+                                <Label text="Font Settings">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                            </Group>
+                            <HBox spacing="20">
+                                <Label text="Font Size" />
+                                <Slider majorTickUnit="2.0" max="20.0" min="10.0" minorTickCount="1" snapToTicks="true" value="14.0" />
+                            </HBox>
+                            <HBox spacing="20">
+                                <Label text="Font Family" />
+                                <ComboBox prefWidth="150.0">
+                                    <items>
+                                        <FXCollections fx:factory="observableArrayList">
+                                            <String fx:value="Arial" />
+                                            <String fx:value="Times New Roman" />
+                                            <String fx:value="Verdana" />
+                                            <String fx:value="Tahoma" />
+                                        </FXCollections>
+                                    </items>
+                                </ComboBox>
+                            </HBox>
+                            <Button mnemonicParsing="false" text="Apply" GridPane.halignment="CENTER" />
+                        </VBox>
+                    </children>
+                </GridPane>
+            </children>
+        </StackPane>
     </center>
 </BorderPane>
