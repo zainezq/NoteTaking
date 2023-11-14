@@ -8,7 +8,7 @@ You can download the latest version of the application [here](https://github.com
 
 ## Prerequisites
 
-Before running NoteTakingApp, ensure that you have Java installed on your system. You can download the latest version of Java from the official [Java website](https://www.java.com/en/download/).
+Before running NoteTaking, ensure that you have Java installed on your system. You can download the latest version of Java from the official [Java website](https://www.java.com/en/download/).
 
 ## Installation
 
