@@ -8,7 +8,9 @@ You can download the latest version of the application [here](https://github.com
 
 ## Prerequisites
 
-Before running NoteTaking, ensure that you have Java installed on your system. You can download the latest version of Java from the official [Java website](https://www.java.com/en/download/).
+Before running NoteTaking, ensure that you have:
+- Java installed on your system. You can download the latest version of Java from the official [Java website](https://www.java.com/en/download/).
+- A suitable JDK installed. You can download the latest version of JDK from the official [Oracle website](https://www.oracle.com/java/technologies/downloads/#jdk21-windows).
 
 ## Installation
 
