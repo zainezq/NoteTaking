@@ -2,10 +2,8 @@
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -23,7 +21,6 @@ import java.awt.*;
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
@@ -528,11 +525,12 @@ public class Controller {
         }
     }
 
-
+    // decided not to use a settings page for the first version
+    /*
     public void handleSetting() {
         try {
             // Load the Settings.fxml file
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("controller-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Future_Updates/controller-view.fxml"));
             Parent root = loader.load();
             // Create a new stage (window) for the settings
             Stage settingsStage = new Stage();
@@ -550,6 +548,7 @@ public class Controller {
             e.printStackTrace();
         }
     }
+*/
     }
 
 

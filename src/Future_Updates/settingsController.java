@@ -1,3 +1,5 @@
+package Future_Updates;
+
 import javafx.event.ActionEvent;
 import javafx.scene.control.SplitPane;
 import javafx.scene.layout.Pane;
