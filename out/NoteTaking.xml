@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>Z:\UNI\Summer23\Project1_NoteTaking_V2\out\artifacts\Project1_NoteTaking_V2_jar\Project1_NoteTaking_V2.jar</jar>
+  <outfile>Z:\UNI\Summer23\Project1_NoteTaking_V2\out\NoteTaking.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl></downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>Z:\UNI\Summer23\Project1_NoteTaking_V2\src\Resources\iconforexe.ico</icon>
+  <jre>
+    <path>C:\Program Files\Java\jre1.8.0_51</path>
+    <requiresJdk>true</requiresJdk>
+    <requires64Bit>false</requires64Bit>
+    <minVersion>1.4.0</minVersion>
+    <maxVersion></maxVersion>
+  </jre>
+</launch4jConfig>

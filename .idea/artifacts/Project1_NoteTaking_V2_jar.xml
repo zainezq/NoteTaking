@@ -1,0 +1,115 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Project1_NoteTaking_V2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Project1_NoteTaking_V2_jar</output-path>
+    <root id="archive" name="Project1_NoteTaking_V2.jar">
+      <element id="module-output" name="Project1_NoteTaking_V2" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/attach.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/awt.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/decora_sse.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/dt_shmem.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/dt_socket.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/fontmanager.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/freetype.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/fxplugins.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/glass.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/glib-lite.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/gstreamer-lite.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/instrument.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/j2gss.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/j2pcsc.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/j2pkcs11.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jaas.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jabswitch.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jaccessinspector.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jaccesswalker.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jar.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jarsigner.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/java.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/java.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javaaccessbridge.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javac.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javadoc.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javafx_font.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javafx_iio.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javajpeg.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javap.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/javaw.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jawt.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jcmd.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jconsole.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jdb.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jdeprscan.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jdeps.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jdwp.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jfr.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jfxmedia.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jfxwebkit.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jhsdb.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jimage.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jimage.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jinfo.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jli.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jlink.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jmap.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jmod.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jpackage.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jpackage.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jps.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jrunscript.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jshell.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jsound.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jstack.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jstat.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jstatd.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/jsvml.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/keytool.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/kinit.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/klist.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/ktab.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/lcms.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/le.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/management.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/management_agent.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/management_ext.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/mlib_image.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/msvcp140.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/msvcp140_1.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/msvcp140_2.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/net.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/nio.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/prefs.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/prism_common.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/prism_d3d.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/prism_sw.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/rmi.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/rmiregistry.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/saproc.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/serialver.exe" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/splashscreen.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/sspi_bridge.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/sunmscapi.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/vcruntime140.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/verify.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/w2k_lsa_auth.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/windowsaccessbridge-64.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/WinFallbackLookup.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/liberica-17.0.5/bin/zip.dll" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx-swt.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.base.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.controls.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.fxml.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.graphics.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.media.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.swing.jar" />
+      <element id="file-copy" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.web.jar" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx-swt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.base.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.controls.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.fxml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.graphics.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.media.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.swing.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.jdks/openjfx-20.0.2_windows-x64_bin-sdk/javafx-sdk-20.0.2/lib/javafx.web.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
