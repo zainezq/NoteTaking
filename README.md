@@ -25,5 +25,5 @@ Before running NoteTakingApp, ensure that you have Java installed on your system
 
 We welcome your feedback and contributions! If you encounter any issues or have suggestions for improvement, please [open an issue](https://github.com/zainezq/NoteTaking/issues) or submit a pull request.
 
-Thank you for using NoteTakingApp!
+Thank you for using NoteTaking Application!
 
